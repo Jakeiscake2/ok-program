@@ -2,30 +2,30 @@
 #define _DECLARE_
 #include "main.h"
 
-pros::Controller controls(E_CONTROLLER_MASTER);
+extern pros::Controller controls;
 
-pros::Motor frontLeft(1, E_MOTOR_GEARSET_06, true, E_MOTOR_ENCODER_DEGREES);
-pros::Motor midLeft(2, E_MOTOR_GEARSET_06, true, E_MOTOR_ENCODER_DEGREES);
-pros::Motor backLeft(3, E_MOTOR_GEARSET_06, true, E_MOTOR_ENCODER_DEGREES);
-pros::Motor_Group leftMotors({ frontLeft,midLeft,backLeft });
+extern pros::Motor frontLeft;
+extern pros::Motor midLeft;
+extern pros::Motor backLeft;
+extern pros::Motor_Group leftMotors;
 
-pros::Motor frontRight(4, E_MOTOR_GEARSET_06, false, E_MOTOR_ENCODER_DEGREES);
-pros::Motor midRight(5, E_MOTOR_GEARSET_06, false, E_MOTOR_ENCODER_DEGREES);
-pros::Motor backRight(6, E_MOTOR_GEARSET_06, false, E_MOTOR_ENCODER_DEGREES);
-pros::Motor_Group rightMotors({ frontRight,midRight,backRight });
+extern pros::Motor frontRight;
+extern pros::Motor midRight;
+extern pros::Motor backRight;
+extern pros::Motor_Group rightMotors;
 
-pros::Motor intake1(7, E_MOTOR_GEARSET_18, false, E_MOTOR_ENCODER_DEGREES);
-pros::Motor intake2(8, E_MOTOR_GEARSET_18, true, E_MOTOR_ENCODER_DEGREES);
-pros::Motor_Group intake({ intake1,intake2 });
-pros::Motor catapult(9, E_MOTOR_GEARSET_36, true, E_MOTOR_ENCODER_DEGREES);
+extern pros::Motor intake1;
+extern pros::Motor intake2;
+extern pros::Motor_Group intake;
+extern pros::Motor catapult;
 
-pros::Imu gyro(19);
-Distance distance_sensor(20);
+extern pros::Imu gyro;
+extern pros::Distance distance_sensor;
 
-pros::ADIDigitalOut frontLeftWing('A');
-pros::ADIDigitalOut frontRightWing('B');
-pros::ADIDigitalOut sideHang('C');
-pros::ADIDigitalOut backWings('D');
+extern pros::ADIDigitalOut frontLeftWing;
+extern pros::ADIDigitalOut frontRightWing;
+extern pros::ADIDigitalOut sideHang;
+extern pros::ADIDigitalOut backWings;
 
 
 #endif

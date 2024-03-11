@@ -1,7 +1,7 @@
 {
   "py/object": "pros.conductor.project.Project",
   "py/state": {
-    "project_name": "try awp",
+    "project_name": "ok programming?",
     "target": "v5",
     "templates": {
       "kernel": {
@@ -309,8 +309,9 @@
       }
     },
     "upload_options": {
-      "slot": 2,
-      "icon": "pizza"
+      "slot": 3,
+      "icon": "X",
+      "description": "made after provs to be modular"
     }
   }
 }
